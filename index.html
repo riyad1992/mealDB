@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDB</title>
+    <script src="https://kit.fontawesome.com/3f70f2432d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body class="container bg-secondary">
+    <h1 class="text-center text-danger mt-5">Search Your Favarite Food</h1>
+    <div class="input-group mb-3 w-50 mx-auto mt-2">
+        <input id="input-field" type="text" class="form-control" placeholder="Search your favarite food" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchFood()" class="btn btn-outline-secondary bg-danger" type="button" id="button-search"><i class="fas fa-search text-white-50"></i></button>
+    </div>
+    <p id="error-message" class="text-danger bg-white w-25 border rounded-3 p-2 mx-auto text-center">Please Provide a Valid value</p>
+    <div  class = "w-50 mx-auto mt-2" id="details"></div>
+    <div id="display-div" class="row row-cols-1 row-cols-md-3 g-4 mt-2"></div>
+    <script src="./js/maeldb.js"></script>
+</body>
+</html>
